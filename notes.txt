@@ -1,0 +1,22 @@
+  HTTP Common Responses
+  200 'OK'
+  201 'Created'
+  400 'Bad Request'
+  401 'Unauthorized'
+  403 'Forbidden'
+  404 'Not Found'
+  500 'Internal Server Error'
+
+  npm init
+  npm install express
+  npm install dotenv
+  npm install --save-dev jest
+  npm install --save-dev node-mocks-http
+  npm install --save-dev supertest
+  git init
+
+"start": "NODE_ENV=development babel-node src/index",
+"build": "babel index.js -d dist",
+    "test": "jest --setupFiles dotenv/config --testTimeout=10000",
+    "test:watch": "jest --setupFiles dotenv/config --watchAll",
+    "test:cov": "jest --setupFiles dotenv/config --coverage",
