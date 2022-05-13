@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: express-crud-postgres
+  description: Express Crud Postgres Demo
+  labels:
+    example.com/custom: custom_label_value
+  annotations:
+    example.com/service-discovery: dpeservice
+    circleci.com/project-slug: github/example-org/dpe-service
+  tags:
+    - javascript
+  links:
+    - url: https://admin.example-org.com
+      title: Admin Dashboard
+      icon: dashboard
+spec:
+  type: service
+  lifecycle: production
+  owner: dpe-team
